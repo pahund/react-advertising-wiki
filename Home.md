@@ -13,6 +13,7 @@ You can view a demo of this library online on *codesandbox.io*:
 ## Documentation Overview
 
 * [[Usage]]
+* [[API]]
 * [[Configuration]]
 * [[Custom Events]]
 * [[Plugins]]
