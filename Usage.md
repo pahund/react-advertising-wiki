@@ -1,11 +1,11 @@
-# Installing the Package
+## Installing the Package
 
 Assuming you already have an application that uses React, install the _react-prebid_ package as a production dependency
 with npm:
 
     npm install --save react-prebid
 
-# Including External Libraries
+## Including External Libraries
 
 You need to load two external libraries, _gpt.js_ and _prebid.js_, just the same way you would do with a “classic”,
 non-React web page.
@@ -37,7 +37,7 @@ Example for including the snippets in an HTML file:
 It includes all available adapters. Production implementations should build from source or customize the
 build using the [Prebid.js download page](http://prebid.org/download.html) to make sure only the necessary bidder adapters are included:
 
-# Adding the Provider
+## Adding the Provider
 
 The basic handline of initializing your ad slots and managing the bidding process is done by an
 _&lt;AdvertisingProvider /&gt;_ component.
@@ -100,7 +100,7 @@ fallback when no bids have come back in time.
 
 **Note:** If you use [react-router](https://github.com/ReactTraining/react-router), you can use one provider per route.
 
-# Adding the Slots
+## Adding the Slots
 
 Finally, with the provider in place, you can add slot components that display the ads from the ad server.
 
