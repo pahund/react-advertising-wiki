@@ -68,7 +68,13 @@ The ad unit path that is used for defining GPT slots, if there is no path specif
 
 **Type**: String
 
-**Example**: `/19968336/header-bid-tag-0`
+**Example**: 
+
+```javascript
+const config = {
+    path: '/19968336/header-bid-tag-0'
+}
+```
 
 ## config.targeting
 
