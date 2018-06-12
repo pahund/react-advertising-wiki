@@ -61,3 +61,11 @@ The overall structure of your configuration is as follows:
     customEvents
 }
 ```
+
+## config.path
+
+| Type | Example |
+| --- | --- |
+| String | `/19968336/header-bid-tag-0` |
+
+The ad unit path that is used for defining GPT slots, if there is no path specified in the GPT slot config.
