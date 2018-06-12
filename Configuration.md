@@ -82,7 +82,7 @@ An object of arbitrary parameters that are used to define global targeting param
 
 **Type**: Object
 
-**Example**
+**Example:**
 
 ```javascript
 const config = {
