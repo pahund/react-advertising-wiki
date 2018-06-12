@@ -68,4 +68,24 @@ The overall structure of your configuration is as follows:
 | --- | --- |
 | String | `/19968336/header-bid-tag-0` |
 
+<table>
+  <tr>
+    <th>Type</th>
+    <td> String </th>
+  </tr>
+  <tr><th>Example</th><td><pre>/19968336/header-bid-tag-0</pre></td></tr>
+</table>
+
 The ad unit path that is used for defining GPT slots, if there is no path specified in the GPT slot config.
+
+## config.targeting
+
+<table>
+  <tr>
+    <th>Type</th>
+    <td>Object</th>
+  </tr>
+  <tr><th>Example</th><td><pre>{
+  bim: 'bam'
+}</pre></td></tr>
+</table>
