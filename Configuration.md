@@ -33,13 +33,31 @@ The overall structure of your configuration is as follows:
             // array with slot's Prebid configuration objects
             prebid: [
                 {
+                    // media types object for this Prebid config
+                    mediaTypes,
 
+                    // array of bid objects
+                    bids: [
+                        {
+                            // bidder ID
+                            bidder,
+
+                            // object with bidder-specific config
+                            params
+                        }
+                    ]
                 }
             ]
         }
     ],
+    
+    // global Prebid configuration
     prebid,
+
+    // GPT size mapping definitions
     sizeMappings,
+
+    // configuration of custom events dispatched by the creatives
     customEvents
 }
 ```
