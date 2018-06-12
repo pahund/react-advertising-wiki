@@ -102,6 +102,8 @@ The configuration in this example is taken from the [Prebid example](http://preb
 page. It configures two ad slots, one that shows a Prebid ad from bidder “appnexus”, the other showing a “house ad” as a
 fallback when no bids have come back in time.
 
+For details on how to set up the configuration, refer to the documentation's [[Configuration]] section.
+
 **Note:** If you use [react-router](https://github.com/ReactTraining/react-router), you can use one provider per route.
 
 ## Adding the Slots
