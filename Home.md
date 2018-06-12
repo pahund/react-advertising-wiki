@@ -16,4 +16,4 @@ You can view a demo of this library online on *codesandbox.io*:
 * [[Configuration]]
 * [[Custom Events]]
 * [[Plugins]]
-* [[Importing-the-Library-As-ESNext-Module]]
+* [[Importing the Library As ESNext-Module]]
