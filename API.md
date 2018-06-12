@@ -1,11 +1,11 @@
 ⚠️ **TODO**
 
-## `AdvertisingProvider` Component
+## AdvertisingProvider Component
 
 
-## `AdvertisingSlot` Component
+## AdvertisingSlot Component
 
 
-## `connectToAdServer` Utility Function
+## connectToAdServer Utility Function
 
 
