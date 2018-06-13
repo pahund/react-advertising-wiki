@@ -1,6 +1,16 @@
+## Contents
+
+* [Demo](#demo)
+* [Installing the Package](#installing-the-package)
+* [Including External Libraries](#including-external-libraries)
+* [Adding the Provider](#adding-the-provider)
+* [Adding the Slots](#adding-the-slots)
+
 ## Demo
 
-You can find the complete code of this tutorial online on [codesandbox.io](https://codesandbox.io/s/k5w8mr9o23).
+You can find the complete code of this tutorial online on [CodeSandbox](https://codesandbox.io/s/k5w8mr9o23).
+
+![Screenshot of demo on CodeSandbox.io](images/React-Prebid-CodeSandbox-Demo-Screenshot.png "Screenshot of demo on CodeSandbox")
 
 ## Installing the Package
 
@@ -27,9 +37,9 @@ Example for including the snippets in an HTML file:
         <meta charset="utf-8">
         <title>Demo</title>
         <script async src="//www.googletagservices.com/tag/js/gpt.js"></script>
-        <script>var googletag=googletag||{};googletag.cmd=googletag.cmd||[]</script>
+        <script>const googletag=googletag||{};googletag.cmd=googletag.cmd||[]</script>
         <script async src="//acdn.adnxs.com/prebid/not-for-prod/1/prebid.js"></script>
-        <script>var pbjs=pbjs||{};pbjs.que=pbjs.que||[]</script>
+        <script>const pbjs=pbjs||{};pbjs.que=pbjs.que||[]</script>
     </head>
     <body>
         <!-- rest of your HTML code goes here -->
