@@ -6,7 +6,7 @@ To use it, you need to have a [Doubleclick for Publishers](https://www.google.co
 
 ## Demo
 
-You can view a demo of this library online on *codesandbox.io*:
+You can view a demo of this library online on *CodeSandbox*:
 
 *   [codesandbox.io/s/k5w8mr9o23](https://codesandbox.io/s/k5w8mr9o23)
 

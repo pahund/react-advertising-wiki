@@ -19,12 +19,14 @@ with npm:
 
     npm install --save react-prebid
 
+**Note:** Your React version should be at least version 16.3. Older versions of React are not supported.
+
 ## Including External Libraries
 
 You need to load two external libraries, _gpt.js_ and _prebid.js_, just the same way you would do with a “classic”,
 non-React web page.
 
-The Prebid library should at least be version 1.0. Older versions of Prebid are not supported.
+**Note:** The Prebid library should at least be version 1.0; older versions of Prebid are not supported.
 
 The script tags that load and initialize these libraries need to be included in your static HTML code.
 
