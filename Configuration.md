@@ -387,7 +387,32 @@ const config = {
 
 `config.slots.sizeMappingName`
 
-⚠️ **TODO**
+The size mapping for responsive ads to be used for this slot. Corresponds to one of the size mappings you have
+configured in the [global GPT configuration](#size-mappings).
+
+**Type**: String
+
+**Example**:
+
+```javascript
+const config = {
+  slots: [
+    {
+      sizeMapping: "phone"
+    }
+  ],
+  sizeMappings: {
+    phone: [
+      {
+        viewPortSize: [320, 700],
+        sizes: [[300, 250], [320, 50]]
+      }
+    ]
+  }
+};
+```
+
+**See also**: [Size Mappings](#size-mappings)
 
 ## Slot Prebid Configuration
 
