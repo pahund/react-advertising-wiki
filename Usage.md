@@ -180,3 +180,9 @@ is used by the script from the ad server to find your container div in the page'
 
 You can also add CSS classes to the _AdvertisingSlot_ component (using the _className_ prop) or inline styles (using
 the _style_ prop).
+
+---
+
+→ Next: [[API]]
+
+
