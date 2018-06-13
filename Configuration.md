@@ -12,6 +12,15 @@ const config = {
     // global GPT targeting parameters (object)
     targeting,
 
+    // global Prebid configuration
+    prebid,
+
+    // GPT size mapping definitions
+    sizeMappings,
+
+    // configuration of custom events dispatched by the creatives
+    customEvents
+
     // array of slot configurations
     slots: [
         {
@@ -49,20 +58,13 @@ const config = {
                 }
             ]
         }
-    ],
-    
-    // global Prebid configuration
-    prebid,
-
-    // GPT size mapping definitions
-    sizeMappings,
-
-    // configuration of custom events dispatched by the creatives
-    customEvents
+    ]
 }
 ```
 
-## config.path
+## Global Configuration
+
+### config.path
 
 The ad unit path that is used for defining GPT slots, if there is no path specified in the GPT slot config.
 
@@ -76,7 +78,7 @@ const config = {
 }
 ```
 
-## config.targeting
+### config.targeting
 
 An object of arbitrary parameters that are used to define global targeting parameters for the slots using [googletag.pubads.setTargeting](https://developers.google.com/doubleclick-gpt/reference#googletag.PubAdsService_setTargeting).
 
@@ -91,3 +93,5 @@ const config = {
     }
 }
 ```
+
+## Slot Configuration
