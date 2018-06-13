@@ -424,7 +424,7 @@ const config = {
 
 An array of Prebid configuration objects, which are explained in the following sub-sections.
 
-**Note**: In most cases, one Prebid config per slots will be sufficient (specify an array with just one object); you
+**Note**: In most cases, one Prebid config per slot will be sufficient (specify an array with just one object); you
 only need multiple ones if you have different bidders per media types configuration.
 
 **Required**
@@ -451,15 +451,17 @@ details.
 const config = {
   slots: [
     {
-      prebid: {
-        mediaTypes: [
-          {
-            banner: {
-              sizes: [[300, 250], [300, 600]]
+      prebid: [
+        {
+          mediaTypes: [
+            {
+              banner: {
+                sizes: [[300, 250], [300, 600]]
+              }
             }
-          }
-        ]
-      }
+          ]
+        }
+      ]
     }
   ]
 };
