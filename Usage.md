@@ -183,6 +183,6 @@ the _style_ prop).
 
 ---
 
-→ Next: [[API]]
+← [[Home]] | [[API]] →
 
 
