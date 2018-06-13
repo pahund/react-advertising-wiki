@@ -28,7 +28,7 @@ import { AdvertisingProvider } from "react-prebid";
 export default ({ children }) => <AdvertisingProvider active={false}>{children}</AdvertisingProvider>;
 ```
 
-Refer to the [[Usage#adding-the-provider]] page for a more elaborate example.
+Refer to the [[Usage|Usage#adding-the-provider]] page for a more elaborate example.
 
 ## AdvertisingSlot
 
@@ -52,7 +52,7 @@ import { AdvertisingSlot } from "react-prebid";
 export default () => <AdvertisingSlot id="my-id" />;
 ```
 
-Refer to the [[Usage#adding-the-slots]] page for a more elaborate example.
+Refer to the [[Usage|Usage#adding-the-slots]] page for a more elaborate example.
 
 ## connectToAdServer
 
