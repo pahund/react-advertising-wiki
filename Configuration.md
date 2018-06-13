@@ -12,11 +12,11 @@ const config = {
     // global GPT targeting parameters (object)
     targeting,
 
-    // global Prebid configuration
-    prebid,
-
     // GPT size mapping definitions
     sizeMappings,
+
+    // global Prebid configuration
+    prebid,
 
     // configuration of custom events dispatched by the creatives
     customEvents
