@@ -1,5 +1,29 @@
 ⚠️ **TODO**
 
+## Contents
+
+* [Overview](#overview)
+* [Global GPT Configuration](#global-gpt-configuration)
+    * [Path](#path)
+    * [Targeting](#targeting)
+    * [Size Mappings](#size-mappings)
+    * [Custom Events](#custom-events)
+* [Global Prebid Configuration](#global-prebid-configuration)
+* [Slot GPT Configuration](#slot-gpt-configuration)
+    * [ID](#id)
+    * [Slot Path](#slot-path)
+    * [Collapse Empty Div](#collapse-empty-div)
+    * [Slot Targeting](#slot-targeting)
+    * [Sizes](#sizes)
+    * [Size Mapping Name](#size-mapping-name)
+* [Slot Prebid Configuration](#slot-prebid-configuration)
+    * [Prebid Media Types](#prebid-media-types)
+    * [Bids](#bids)
+        * [Bidder](#bidder)
+        * [Bid Parameters](#bid-parameters)
+
+## Overview
+
 To configure Google Publisher Tags (GPT) and Prebid, you create one central configuration object which you pass as
 _config_ prop to the [[AdvertisingProvider|API#advertisingprovider]] component.
 
@@ -147,7 +171,7 @@ const config = {
 [Build Responsive Ads](https://support.google.com/dfp_premium/answer/3423562?visit_id=1-636644784470043770-1893849263)
 (Google DoubleClick for Publishers documentation)
 
-## Custom Events
+### Custom Events
 
 `config.customEvents`
 
@@ -194,7 +218,7 @@ const config = {
 };
 ```
 
-**See Also**: [pbjs.setConfig](http://prebid.org/dev-docs/publisher-api-reference.html#module_pbjs.setConfig) (Prebid.js
+**See also**: [pbjs.setConfig](http://prebid.org/dev-docs/publisher-api-reference.html#module_pbjs.setConfig) (Prebid.js
 API reference)
 
 ## Slot GPT Configuration
