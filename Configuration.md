@@ -1,26 +1,24 @@
-⚠️ **TODO**
-
 ## Contents
 
 * [Overview](#overview)
 * [Global GPT Configuration](#global-gpt-configuration)
-    * [Path](#path)
-    * [Targeting](#targeting)
-    * [Size Mappings](#size-mappings)
-    * [Custom Events](#custom-events)
+  * [Path](#path)
+  * [Targeting](#targeting)
+  * [Size Mappings](#size-mappings)
+  * [Custom Events](#custom-events)
 * [Global Prebid Configuration](#global-prebid-configuration)
 * [Slot GPT Configuration](#slot-gpt-configuration)
-    * [ID](#id)
-    * [Slot Path](#slot-path)
-    * [Collapse Empty Div](#collapse-empty-div)
-    * [Slot Targeting](#slot-targeting)
-    * [Sizes](#sizes)
-    * [Size Mapping Name](#size-mapping-name)
+  * [ID](#id)
+  * [Slot Path](#slot-path)
+  * [Collapse Empty Div](#collapse-empty-div)
+  * [Slot Targeting](#slot-targeting)
+  * [Sizes](#sizes)
+  * [Size Mapping Name](#size-mapping-name)
 * [Slot Prebid Configuration](#slot-prebid-configuration)
-    * [Prebid Media Types](#prebid-media-types)
-    * [Bids](#bids)
-        * [Bidder](#bidder)
-        * [Bid Parameters](#bid-parameters)
+  * [Prebid Media Types](#prebid-media-types)
+  * [Bids](#bids)
+    * [Bidder](#bidder)
+    * [Bid Parameters](#bid-parameters)
 
 ## Overview
 
@@ -115,7 +113,8 @@ const config = {
 `config.targeting`
 
 An object of arbitrary parameters that are used to define global targeting parameters for the slots using
-[pubads.setTargeting](https://developers.google.com/doubleclick-gpt/reference#googletag.PubAdsService_setTargeting).
+[pubads.setTargeting](https://developers.google.com/doubleclick-gpt/reference#googletag.PubAdsService_setTargeting) of
+the GPT API.
 
 Note that you can also define targeting parameters for individual slots (see section [Slot Targeting](#slot-targeting)
 in section “Slot GPT Configuration” below).
@@ -227,7 +226,7 @@ API reference)
 
 An array of slot config objects, which are explained in the following sub-sections.
 
-**Type**: Array
+**Type**: Array of objects
 
 ### ID
 
@@ -281,34 +280,99 @@ const config = {
 
 `config.slots.collapseEmptyDiv`
 
+Use this to remove div elements from the DOM when the ad server has no matching ad to serve for this slot.
+
+The value is an array of one or two booleans, which determine the collapsing of empty div elements as follows:
+
+* _First bool_: Whether to collapse the slot if no ad is returned
+* _Second bool_: Whether to collapse the slot even before an ad is fetched; ignored if collapse is not true
+
+**Type**: Array of booleans
+
+**Example**:
+
+```javascript
+const config = {
+  slots: [
+    {
+      collapseEmptyDiv: [true, false]
+    }
+  ]
+};
+```
+
+**See also**:
+[!googletag.Slot setCollapseEmptyDiv(collapse, opt_collapseBeforeAdFetch)](https://developers.google.com/doubleclick-gpt/reference#googletag.Slot_setCollapseEmptyDiv)
+(GPT reference)
+
 ### Slot Targeting
 
 `config.slots.targeting`
+
+An object of arbitrary parameters that are used to define targeting parameters for the slot using
+[slot.setTargeting](https://developers.google.com/doubleclick-gpt/reference#googletag.Slot_setTargeting) of the GPT API.
+
+Note that you can also define targeting parameters for individual slots (see section [Slot Targeting](#slot-targeting)
+in section “Slot GPT Configuration” below).
+
+**Type**: Object
+
+**Example:**
+
+```javascript
+const config = {
+  slots: [
+    {
+      targeting: {
+        age: 27
+      }
+    }
+  ]
+};
+```
+
+**See also**:
+[!googletag.Slot setTargeting(key, value)](https://developers.google.com/doubleclick-gpt/reference#googletag.Slot_setTargeting)
+(GPT reference)
 
 ### Sizes
 
 `config.slots.sizes`
 
+⚠️ **TODO**
+
 ### Size Mapping Name
 
 `config.slots.sizeMappingName`
+
+⚠️ **TODO**
 
 ## Slot Prebid Configuration
 
 `config.slots.prebid`
 
+⚠️ **TODO**
+
 ### Prebid Media Types
 
 `config.slots.prebid.mediaTypes`
+
+⚠️ **TODO**
 
 ### Bids
 
 `config.slots.prebid.bids`
 
+⚠️ **TODO**
+
 #### Bidder
 
 `config.slots.prebid.bids.bidder`
 
+⚠️ **TODO**
+
 #### Bid Parameters
 
 `config.slots.prebid.bids.params`
+
+⚠️ **TODO**
