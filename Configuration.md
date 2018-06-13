@@ -207,6 +207,10 @@ const config = {
 Allows you to specify global configuration options for Prebid.js, which are passed along using
 [pbjs.setConfig](http://prebid.org/dev-docs/publisher-api-reference.html#module_pbjs.setConfig).
 
+Please refer to the
+[Prebid documentation](http://prebid.org/dev-docs/publisher-api-reference.html#module_pbjs.setConfig) for details on
+which options you can provide.
+
 **Type**: Object
 
 **Example**:
@@ -418,31 +422,111 @@ const config = {
 
 `config.slots.prebid`
 
-⚠️ **TODO**
+An array of Prebid configuration objects, which are explained in the following sub-sections.
+
+**Note**: In most cases, one Prebid config per slots will be sufficient (specify an array with just one object); you
+only need multiple ones if you have different bidders per media types configuration.
+
+**Required**
+
+**Type**: Array of objects, each with properties _mediaTypes_ and _bids_
 
 ### Prebid Media Types
 
 `config.slots.prebid.mediaTypes`
 
-⚠️ **TODO**
+Specify an object of media types for each Prebid configuration.
+
+Refer to the
+[Prebid media types documentation](http://prebid.org/dev-docs/publisher-api-reference.html#addAdUnits-MediaTypes) for
+details.
+
+**Required**
+
+**Type**: Object
+
+**Example**:
+
+```javascript
+const config = {
+  slots: [
+    {
+      prebid: {
+        mediaTypes: [
+          {
+            banner: {
+              sizes: [[300, 250], [300, 600]]
+            }
+          }
+        ]
+      }
+    }
+  ]
+};
+```
+
+**See also**:
+[Prebid media types documentation](http://prebid.org/dev-docs/publisher-api-reference.html#addAdUnits-MediaTypes)
 
 ### Bids
 
 `config.slots.prebid.bids`
 
-⚠️ **TODO**
+Specify an array of bids per slot and media types configuration.
+
+Each bid object has a [bidder](#bidder) and optional [params](#bid-parameters) property (see below).
+
+**Required**
+
+**Type**: Array of objects with properties _bidder_ and optional _params_
+
+**Example**:
+
+```javascript
+const config = {
+  slots: [
+    {
+      prebid: [
+        {
+          bids: [
+            {
+              bidder: "appnexus",
+              params: {
+                placementId: "10433394"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
+```
 
 #### Bidder
 
 `config.slots.prebid.bids.bidder`
 
-⚠️ **TODO**
+The ID of the bidder (e.g. _appnexus_, _ix_, _openex_, etc.).
+
+Refer to the [Prebid bidder documentation](http://prebid.org/dev-docs/bidders.html) to see which bidders are supported.
+
+**Required**
+
+**Type**: String
+
+**See also**: [Prebid bidder documentation](http://prebid.org/dev-docs/bidders.html)
 
 #### Bid Parameters
 
 `config.slots.prebid.bids.params`
 
-⚠️ **TODO**
+Parameters specific to the bidder. Refer to the [Prebid bidder documentation](http://prebid.org/dev-docs/bidders.html)
+to see which bidders uses which parameters.
+
+**Type**: Object
+
+**See also**: [Prebid bidder documentation](http://prebid.org/dev-docs/bidders.html)
 
 ---
 
