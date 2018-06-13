@@ -56,7 +56,7 @@ build using the [Prebid.js download page](http://prebid.org/download.html) to ma
 ## Adding the Provider
 
 The basic handline of initializing your ad slots and managing the bidding process is done by an
-_&lt;AdvertisingProvider /&gt;_ component.
+[[AdvertisingProvider|API#advertisingprovider]] component.
 
 You pass your ad slot configuration to this provider, which then initializes Prebid when the page is loaded.
 
@@ -122,7 +122,7 @@ For details on how to set up the configuration, refer to the documentation's [[C
 
 Finally, with the provider in place, you can add slot components that display the ads from the ad server.
 
-This library includes a component _AdvertisingSlot_ that you can use to put div elements on your page that are filled with
+This library includes a component [[AdvertisingSlot|API#advertisingslot]] that you can use to put div elements on your page that are filled with
 creatives from the ad server.
 
 The final code example:
