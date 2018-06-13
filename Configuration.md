@@ -82,7 +82,7 @@ You can also paths for individual slots (see section [Slot Path](#slot-path) in 
 
 ```javascript
 const config = {
-  path: "/19968336/header-bid-tag-0"
+  path: "/19968336/header-bid-tag"
 };
 ```
 
@@ -183,14 +183,15 @@ Allows you to specify global configuration options for Prebid.js, which are pass
 **Type**: Object
 
 **Example**:
+
 ```javascript
 const config = {
-    prebid: {
-        bidderTimeout: 1500,
-        priceGranularity: 'high',
-        bidderSequence: 'fixed'
-    }
-}
+  prebid: {
+    bidderTimeout: 1500,
+    priceGranularity: "high",
+    bidderSequence: "fixed"
+  }
+};
 ```
 
 **See Also**: [pbjs.setConfig](http://prebid.org/dev-docs/publisher-api-reference.html#module_pbjs.setConfig) (Prebid.js
@@ -200,13 +201,57 @@ API reference)
 
 `config.slots`
 
+An array of slot config objects, which are explained in the following sub-sections.
+
+**Type**: Array
+
 ### ID
 
 `config.slots.id`
 
+The element ID of the div in your HTML code that is filled with the creative from the ad server. This ID corresponds to
+the _id_ prop of the [[AdvertisingSlot|API#advertisingslot]] component.
+
+**Required**
+
+**Type**: String
+
+**Example**:
+
+```javascript
+const config = {
+  slots: [
+    {
+      id: "div-gpt-ad-1460505748561-0"
+    }
+  ]
+};
+```
+
+**See also**: [[AdvertisingSlot|API#advertisingslot]] component
+
 ### Slot Path
 
 `config.slots.path`
+
+The ad unit path for this specific slot. If it is omitted, the [ad unit path from the global GPT configuration](#path)
+is used. You _must_ have either a slot specific or global ad unit path.
+
+**Type**: String
+
+**Example**:
+
+```javascript
+const config = {
+  slots: [
+    {
+      path: "'/19968336/header-bid-tag-0"
+    }
+  ]
+};
+```
+
+**See also**: [global ad unit path](#path)
 
 ### Collapse Empty Div
 
