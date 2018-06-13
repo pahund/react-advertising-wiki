@@ -38,7 +38,7 @@ Each _AdvertisingSlot_ component provides a div element which is filled with an 
 
 | Name                  | Type   | Required | Default | Description                                                                        |
 | --------------------- | ------ | -------- | ------- | ---------------------------------------------------------------------------------- |
-| `id`                  | String | Yes      | –       | The div element's ID, used by DFP to render ads, references [[slot ID              | Configuration#id]] in the config |
+| `id`                  | String | Yes      | –       | The div element's ID, used by DFP to render ads, references [[Configuration#id]] |
 | `style`               | Object | –        | –       | Use this for styling the slot using CSS properties, e.g. to add a background color |
 | `className`           | String | –        | –       | Use this for specifying a CSS class for styling the slot                           |
 | `customEventHandlers` | Object | –        | –       | Refer to section [[Custom Events]] for details                                     |
