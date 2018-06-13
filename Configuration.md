@@ -312,8 +312,8 @@ const config = {
 An object of arbitrary parameters that are used to define targeting parameters for the slot using
 [slot.setTargeting](https://developers.google.com/doubleclick-gpt/reference#googletag.Slot_setTargeting) of the GPT API.
 
-Note that you can also define targeting parameters for individual slots (see section [Slot Targeting](#slot-targeting)
-in section “Slot GPT Configuration” below).
+Note that you can also define global targeting parameters for all slots (see section [Targeting](#targeting)
+in section “Global GPT Configuration” below).
 
 **Type**: Object
 
