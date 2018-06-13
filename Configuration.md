@@ -88,6 +88,10 @@ const config = {
 };
 ```
 
+Hint: For an example of a complete, valid configuration, refer to
+[testAdvertisingConfig.js](https://github.com/technology-ebay-de/react-prebid/blob/master/src/utils/testAdvertisingConfig.js)
+in the source code, which is used for the unit tests of _react-prebid_.
+
 ## Global GPT Configuration
 
 ### Path
@@ -312,8 +316,8 @@ const config = {
 An object of arbitrary parameters that are used to define targeting parameters for the slot using
 [slot.setTargeting](https://developers.google.com/doubleclick-gpt/reference#googletag.Slot_setTargeting) of the GPT API.
 
-Note that you can also define global targeting parameters for all slots (see section [Targeting](#targeting)
-in section “Global GPT Configuration” below).
+Note that you can also define global targeting parameters for all slots (see section [Targeting](#targeting) in section
+“Global GPT Configuration” below).
 
 **Type**: Object
 
@@ -380,4 +384,3 @@ const config = {
 ---
 
 ← [[API]] | [[Custom Events]] →
-
