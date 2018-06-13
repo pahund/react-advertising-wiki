@@ -40,6 +40,9 @@ const config = {
       // slot size configuration for GPT
       sizes,
 
+      // slot size configuration for GPT
+      sizeMappingName,
+      
       // array with slot's Prebid configuration objects
       prebid: [
         {
@@ -63,9 +66,11 @@ const config = {
 };
 ```
 
-## Global Configuration
+## Global GPT Configuration
 
-### config.path
+### Path
+
+`config.path`
 
 The ad unit path that is used for defining GPT slots, if there is no path specified in the GPT slot config.
 
@@ -79,10 +84,14 @@ const config = {
 };
 ```
 
-### config.targeting
+### Targeting
+
+`config.targeting`
 
 An object of arbitrary parameters that are used to define global targeting parameters for the slots using
-[googletag.pubads.setTargeting](https://developers.google.com/doubleclick-gpt/reference#googletag.PubAdsService_setTargeting).
+[pubads.setTargeting](https://developers.google.com/doubleclick-gpt/reference#googletag.PubAdsService_setTargeting).
+
+Note that you can also define targeting parameters for individual slots (see section [Slot Configuration](#slot-path) below).
 
 **Type**: Object
 
@@ -96,4 +105,71 @@ const config = {
 };
 ```
 
+**See also**:
+[!googletag.PubAdsService setTargeting(key, value)](https://developers.google.com/doubleclick-gpt/reference#googletag.PubAdsService_setTargeting)
+(GPT reference)
+
+### Size Mappings
+
+`config.sizeMappings`
+
+An object with size mapping definitions to be used for responsive ads.
+
+The object's keys are the size mapping names referenced from the configuration of each slot 
+
+## Custom Events 
+
+`config.customEvents`
+
+## Global Prebid Configuration
+
+`config.prebid`
+
 ## Slot Configuration
+
+`config.slots`
+
+### ID
+
+`config.slots.id`
+
+### Slot Path
+
+`config.slots.path`
+
+### Collapse Empty Div
+
+`config.slots.collapseEmptyDiv`
+
+### Slot Targeting
+
+`config.slots.targeting`
+
+### Sizes
+
+`config.slots.sizes`
+
+### Size Mapping Name
+
+`config.slots.sizeMappingName`
+
+## Slot Prebid Configuration
+
+`config.slots.prebid`
+
+### Prebid Media Types
+
+`config.slots.prebid.mediaTypes`
+
+### Bids
+
+`config.slots.prebid.bids`
+
+#### Bidder
+
+`config.slots.prebid.bids.bidder`
+
+#### Bid Parameters
+
+`config.slots.prebid.bids.params`
+
