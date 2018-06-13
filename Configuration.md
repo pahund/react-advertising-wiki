@@ -343,7 +343,45 @@ const config = {
 
 `config.slots.sizes`
 
-⚠️ **TODO**
+Define one or more sizes for the ad slot. This is the size that is used in the ad request if no responsive size mapping
+is provided or the size of the viewport is smaller than the smallest size provided in the mapping.
+
+**Note:** More than one sizes is a DFP premium feature; if you use DoubleClick for Publishers Small Business, you can
+only specify one size.
+
+**Required**
+
+**Type**: Array of arrays (see examples)
+
+**Examples:**
+
+_One size (array with width and height)_
+
+```javascript
+const config = {
+  slots: [
+    {
+      sizes: [320, 50]
+    }
+  ]
+};
+```
+
+_Multiple sizes_
+
+```javascript
+const config = {
+  slots: [
+    {
+      sizes: ["fluid", [300, 250], [320, 50], [320, 100]]
+    }
+  ]
+};
+```
+
+**See also**:
+[googletag.Slot googletag.defineSlot(adUnitPath, size, opt_div)](https://developers.google.com/doubleclick-gpt/reference#googletag.defineSlot)
+(GPT reference)
 
 ### Size Mapping Name
 
