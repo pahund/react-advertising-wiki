@@ -121,7 +121,7 @@ An object with size mapping definitions to be used for responsive ads.
 The object's keys are the size mapping names referenced from the configuration of each slot (see section
 [Size Mapping Name](#size-mapping-name) in section “Slot GPT Configuration” below).
 
-The object's values are objects with two properties:
+The object's values are arrays of objects with two properties:
 
 * `viewPortSize`: The target view port size of the size mapping; array with two numbers for width and height
 * `sizes`: Array of ad sizes to be displayed in this view port; array of arrays with two numbers for width and height
@@ -154,21 +154,21 @@ const config = {
 Custom events allow you to pass callback functions to your [[AdvertisingSlot|API#advertisingslot]] components using the
 _customEventHandlers_ prop.
 
-With these callback functions, you can trigger layout changes using events dispatched from the iframes delivered by
-the ad server. This is useful, for example, to set the page's background color to match a creative.
+With these callback functions, you can trigger layout changes using events dispatched from the iframes delivered by the
+ad server. This is useful, for example, to set the page's background color to match a creative.
 
 **Type**: Object
 
-**Example**: 
+**Example**:
 
 ```javascript
 const config = {
   customEvents: {
     blueBackground: {
-      eventMessagePrefix: 'BlueBackground:'
+      eventMessagePrefix: "BlueBackground:"
     }
   }
-}
+};
 ```
 
 **See also**: [[Custom Events]]
@@ -176,6 +176,25 @@ const config = {
 ## Global Prebid Configuration
 
 `config.prebid`
+
+Allows you to specify global configuration options for Prebid.js, which are passed along using
+[pbjs.setConfig](http://prebid.org/dev-docs/publisher-api-reference.html#module_pbjs.setConfig).
+
+**Type**: Object
+
+**Example**:
+```javascript
+const config = {
+    prebid: {
+        bidderTimeout: 1500,
+        priceGranularity: 'high',
+        bidderSequence: 'fixed'
+    }
+}
+```
+
+**See Also**: [pbjs.setConfig](http://prebid.org/dev-docs/publisher-api-reference.html#module_pbjs.setConfig) (Prebid.js
+API reference)
 
 ## Slot GPT Configuration
 
