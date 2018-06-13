@@ -21,4 +21,4 @@ You can view a demo of this library online on *codesandbox.io*:
 
 ---
 
-[[Home]] →
+[[Usage]] →
