@@ -55,7 +55,7 @@ build using the [Prebid.js download page](http://prebid.org/download.html) to ma
 
 ## Adding the Provider
 
-The basic handline of initializing your ad slots and managing the bidding process is done by an
+The basic handling of initializing your ad slots and managing the bidding process is done by an
 [[AdvertisingProvider|API#advertisingprovider]] component.
 
 You pass your ad slot configuration to this provider, which then initializes Prebid when the page is loaded.
@@ -186,5 +186,4 @@ the _style_ prop).
 ---
 
 ← [[Home]] | [[API]] →
-
 
