@@ -16,7 +16,7 @@ from the server to the client for state hydration.
 This means the Redux state cannot have any functions in it, since those cannot be serialized. It is generally considered
 an anti-pattern to put functions in the Redux state.
 
-The problem now is that our [[advertising configuration|Configuration] is also stored in the Redux state.
+The problem now is that our [[advertising configuration|Configuration]] is also stored in the Redux state.
 
 For some bidders, we configure Prebid with a function that converts the currency of the bids' CPM (cost per mille) from
 US$ to EUR. But we cannot store this function in our config, because of the serialization.
