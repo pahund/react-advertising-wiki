@@ -20,6 +20,10 @@
     * [Bidder](#bidder)
     * [Bid Parameters](#bid-parameters)
 
+## Demo
+
+You can check if your configuration is valid online in our [react-prebid config validator](https://7ml075xoz1.codesandbox.io).
+
 ## Overview
 
 To configure Google Publisher Tags (GPT) and Prebid, you create one central configuration object which you pass as
