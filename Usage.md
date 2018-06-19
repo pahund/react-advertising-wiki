@@ -116,7 +116,7 @@ fallback when no bids have come back in time.
 
 For details on how to set up the configuration, refer to the documentation's [[Configuration]] section.
 
-**Note:** If you use [react-router](https://github.com/ReactTraining/react-router), you can use one provider per route.
+**Note:** If you use [react-router](https://github.com/ReactTraining/react-router), you can use one provider per route with different configurations per route (i.e. per page).
 
 ## Adding the Slots
 
