@@ -4,4 +4,3 @@
 * [[Configuration]]
 * [[Custom Events]]
 * [[Plugins]]
-* [[Importing the Library As ESNext Module]]

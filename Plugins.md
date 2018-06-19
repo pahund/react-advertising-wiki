@@ -43,6 +43,19 @@ const plugins = [
     }
   }
 ];
+
+const config = {
+    usdToEurRate: 0.8611,
+    /* other config */
+};
+
+function App() {
+    return (
+        <AdvertisingProvider config={config} plugins={plugins}>
+            {/* other components */}
+        </AdvertisingProvider>
+    )
+}
 ```
 
 * The plugin code is executed when the _AdvertisingProvider_ sets up Prebid; this is specified through the name of the
@@ -59,4 +72,4 @@ const plugins = [
   
 ---
 
-← [[Custom Events]] | [[Importing the Library As ESNext Module]] →
+← [[Custom Events]]
