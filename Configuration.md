@@ -1,5 +1,6 @@
 ## Contents
 
+* [Demo](#demo)
 * [Overview](#overview)
 * [Global GPT Configuration](#global-gpt-configuration)
   * [Path](#path)
@@ -22,7 +23,9 @@
 
 ## Demo
 
-You can check if your configuration is valid online in our [react-prebid config validator](https://7ml075xoz1.codesandbox.io).
+You can check if your configuration is valid online in our [react-prebid config validator](https://7ml075xoz1.codesandbox.io):
+
+[![Screenshot of config validator on CodeSandbox.io](images/React-Prebid-Config-Validator-Screenshot.png "Screenshot of config validator")](https://7ml075xoz1.codesandbox.io)
 
 ## Overview
 
