@@ -39,9 +39,9 @@ Example for including the snippets in an HTML file:
         <meta charset="utf-8">
         <title>Demo</title>
         <script async src="//www.googletagservices.com/tag/js/gpt.js"></script>
-        <script>const googletag=googletag||{};googletag.cmd=googletag.cmd||[]</script>
+        <script>var googletag=googletag||{};googletag.cmd=googletag.cmd||[]</script>
         <script async src="//acdn.adnxs.com/prebid/not-for-prod/1/prebid.js"></script>
-        <script>const pbjs=pbjs||{};pbjs.que=pbjs.que||[]</script>
+        <script>var pbjs=pbjs||{};pbjs.que=pbjs.que||[]</script>
     </head>
     <body>
         <!-- rest of your HTML code goes here -->
