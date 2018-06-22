@@ -409,7 +409,7 @@ configured in the [global GPT configuration](#size-mappings).
 const config = {
   slots: [
     {
-      sizeMapping: "phone"
+      sizeMappingName: "phone"
     }
   ],
   sizeMappings: {
