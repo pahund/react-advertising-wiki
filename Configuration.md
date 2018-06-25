@@ -158,7 +158,9 @@ The object's keys are the size mapping names referenced from the configuration o
 The object's values are arrays of objects with two properties:
 
 * `viewPortSize`: The target view port size of the size mapping; array with two numbers for width and height
-* `sizes`: Array of ad sizes to be displayed in this view port; array of arrays with two numbers for width and height – ⚠️ **important:** this needs to be an array, even if you have only one ad size to display for this viewport size
+* `sizes`: Array of ad sizes to be displayed in this view port; array of arrays with two numbers for width and height
+  * ⚠️ **important:** this needs to be an array, even if you have only one ad size to display for this viewport size
+  * If you want to display no ads for this size, specify an empty array (`[]`)
 
 **Type**: Object
 
@@ -171,7 +173,7 @@ const config = {
       {
         // no ads default (mobile phones)
         viewPortSize: [0, 0],
-        sizes: [[]]
+        sizes: []
       },
       {
         // tablets
