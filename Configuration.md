@@ -169,7 +169,7 @@ The object's values are arrays of objects with two properties:
 ```javascript
 const config = {
   sizeMappings: {
-    superbanner: [
+    pageheader: [
       {
         // no ads default (mobile phones)
         viewPortSize: [0, 0],
@@ -184,6 +184,7 @@ const config = {
         // desktop
         viewPortSize: [1000, 250],
         sizes: [[800, 250], [970, 250]]
+      }
     ]
   }
 };
@@ -427,14 +428,22 @@ configured in the [global GPT configuration](#size-mappings).
 const config = {
   slots: [
     {
-      sizeMappingName: "phone"
+      sizeMappingName: "pageheader"
     }
   ],
   sizeMappings: {
-    phone: [
+    pageheader: [
       {
-        viewPortSize: [320, 700],
-        sizes: [[300, 250], [320, 50]]
+        viewPortSize: [0, 0],
+        sizes: []
+      },
+      {
+        viewPortSize: [640, 60],
+        sizes: [[468, 60]]]
+      },
+      {
+        viewPortSize: [1000, 250],
+        sizes: [[800, 250], [970, 250]]
       }
     ]
   }
