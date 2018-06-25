@@ -178,7 +178,7 @@ const config = {
       {
         // tablets
         viewPortSize: [640, 60],
-        sizes: [[468, 60]]]
+        sizes: [[468, 60]]
       },
       {
         // desktop
