@@ -61,11 +61,12 @@ function App() {
 * The plugin code is executed when the _AdvertisingProvider_ sets up Prebid; this is specified through the name of the
   method chosen for the plugin function
 * You can define multiple plugins, each plugin for one or more setup or initialization phases; valid names are:
+  * _setupGpt_: initialization of GPT when _AdvertisingProvider_ component mounts
+  * _displaySlots_: immediately before `googletag.display` is called for each slot
   * _setupPrebid_: initialization of Prebid when _AdvertisingProvider_ component mounts
+  * _teardownGpt_: GPT is deactivated when _AdvertisingProvider_ component unmounts
   * _teardownPrebid_: Prebid is deactivated when _AdvertisingProvider_ component unmounts; this can be useful for
     stopping timers or intervals
-  * _setupGpt_: initialization of GPT when _AdvertisingProvider_ component mounts
-  * _teardownGpt_: GPT is deactivated when _AdvertisingProvider_ component unmounts
 * *this* in the scope of the callback refers to the advertising module that is used internally to manage 
   to Prebid and GPT; *this.config* is the configuration you pass into the *AdvertisingProvider* component;
   in our example, we put the conversion rate from US$ to EUR in our config
