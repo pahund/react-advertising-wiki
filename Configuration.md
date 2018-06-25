@@ -158,7 +158,7 @@ The object's keys are the size mapping names referenced from the configuration o
 The object's values are arrays of objects with two properties:
 
 * `viewPortSize`: The target view port size of the size mapping; array with two numbers for width and height
-* `sizes`: Array of ad sizes to be displayed in this view port; array of arrays with two numbers for width and height
+* `sizes`: Array of ad sizes to be displayed in this view port; array of arrays with two numbers for width and height – ⚠️ **important:** this needs to be an array, even if you have only one ad size to display for this viewport size
 
 **Type**: Object
 
@@ -167,15 +167,31 @@ The object's values are arrays of objects with two properties:
 ```javascript
 const config = {
   sizeMappings: {
-    phone: [
+    superbanner: [
       {
-        viewPortSize: [320, 700],
-        sizes: [[300, 250], [320, 50]]
-      }
+        // no ads default (mobile phones)
+        viewPortSize: [0, 0],
+        sizes: [[]]
+      },
+      {
+        // tablets
+        viewPortSize: [640, 60],
+        sizes: [[468, 60]]]
+      },
+      {
+        // desktop
+        viewPortSize: [1000, 250],
+        sizes: [[800, 250], [970, 250]]
     ]
   }
 };
 ```
+
+The example above defines the following sizes:
+
+* If less than 640 pixels screen width or less than 60 pixels screen height are available, display no ads (using `[0, 0]` acts as a default that is used if no other sizes fix
+* If at least 640 x 60 pixels are available, display a full size banner (468 x 60 pixels)
+* If at least 1000 x 250 pixels are available, display a billboard (800 x 250 *or* 970 x 250, whichever is available and yields more revenue)
 
 **See also**:
 [Build Responsive Ads](https://support.google.com/dfp_premium/answer/3423562?visit_id=1-636644784470043770-1893849263)
