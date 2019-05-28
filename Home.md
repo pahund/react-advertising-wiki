@@ -13,6 +13,7 @@ You can view a demo of this library online on *CodeSandbox*:
 ## Documentation Overview
 
 * [[Usage]]
+* [[Internet Explorer 11 Compatibility]]
 * [[API]]
 * [[Configuration]]
 * [[Custom Events]]
