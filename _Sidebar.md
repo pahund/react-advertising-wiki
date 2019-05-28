@@ -1,5 +1,6 @@
 * [[Home]]
 * [[Usage]]
+* [[Internet Explorer 11 Compatibility]]
 * [[API]]
 * [[Configuration]]
 * [[Custom Events]]
