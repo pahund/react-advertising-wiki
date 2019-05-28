@@ -185,5 +185,5 @@ the _style_ prop).
 
 ---
 
-← [[Home]] | [[API]] →
+← [[Home]] | [[Internet Explorer 11 Compatibility]] →
 
