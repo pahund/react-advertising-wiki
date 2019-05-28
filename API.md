@@ -16,7 +16,7 @@ It handles all the interaction with the DFP ad server and is required for the ad
 | Name      | Type                                                                                                                                          | Required       | Default | Description                                                                          |
 | --------- | --------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------- | ------------------------------------------------------------------------------------ |
 | `active`  | Boolean                                                                                                                                       | –              | `true`  | If set to `false`, the advertising provider is deactivated and no ads will be served |
-| `config`  | [AdvertisingConfigPropType](https://github.com/technology-ebay-de/react-prebid/blob/master/src/components/utils/AdvertisingConfigPropType.js) | Yes, if active | –       | Refer to section [[Configuration]] for details                                       |
+| `config`  | [AdvertisingConfigPropType](https://github.com/technology-ebay-de/react-prebid/blob/master/src/components/utils/AdvertisingConfigPropType.js) | - | –       | Refer to section [[Configuration]] for details                                       |
 | `plugins` | Array                                                                                                                                         | –              | –       | Refer to section [[Plugins]] for details                                             |
 
 ### Usage
@@ -29,6 +29,16 @@ export default ({ children }) => <AdvertisingProvider active={false}>{children}<
 ```
 
 Refer to the [[Usage|Usage#adding-the-provider]] page for a more elaborate example.
+
+### Advanced Usage: Passing the Config Prop Later
+
+You may have noticed that the `config` prop is not required. If no config is passed to the `AdvertisingProvider`, it will simply do nothing.
+
+Why is this useful? In some cases, you may want not have your ad config ready when the page is initially loaded, perhaps because you are fetching it asynchronously from a service. In this case, you wouldn't want to block the whole page from being shown to the user, just because the ad config has not been loaded yet.
+
+The solution is to render the `AdvertisingProvider` without a config on initial page load, then load the config, then re-render the page after the config has been loaded successfully.
+
+This feature was introduced in version 1.1.0.
 
 ## AdvertisingSlot
 
