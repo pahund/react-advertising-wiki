@@ -22,4 +22,4 @@ Versions of Internet Explorer older than IE11 are **not** supported.
 
 ---
 
-← [[Usage]] | [[API]] →
+← [[Usage]] | [[Advanced Usage]] →
