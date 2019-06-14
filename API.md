@@ -102,4 +102,4 @@ export default connectToAdServer(MyAdSlot);
 
 ---
 
-← [[Usage]] | [[Configuration]] →
+← [[Advanced Usage]] | [[Configuration]] →
