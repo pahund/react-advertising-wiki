@@ -3,4 +3,4 @@ todo
 
 ---
 
-← [[Internet Explorer 11 Compatibility]] | [[Configuration]] →
+← [[Internet Explorer 11 Compatibility]] | [[API]] →
