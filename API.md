@@ -30,7 +30,9 @@ export default ({ children }) => <AdvertisingProvider active={false}>{children}<
 
 Refer to the [[Usage|Usage#adding-the-provider]] page for a more elaborate example.
 
-### Advanced Usage: Passing the Config Prop Later
+### Advanced Usage
+
+#### Passing the Config Prop Later
 
 You may have noticed that the `config` prop is not required. If no config is passed to the `AdvertisingProvider`, it will simply do nothing.
 
@@ -39,6 +41,16 @@ Why is this useful? In some cases, you may want not have your ad config ready wh
 The solution is to render the `AdvertisingProvider` without a config on initial page load, then load the config, then re-render the page after the config has been loaded successfully.
 
 This feature was introduced in version 1.1.0.
+
+#### Updating the Config Prop After Initial Render
+
+You can update your `AdvertisingProvider` by re-rendering it with a different configuration prop than before.
+
+When the `AdvertisingProvider` receives a new `config` prop, it will automatically tear down GPT and Prebid and set them up again with the updated configuration, causing all the ad slots in the container to get refreshed with new ads according to the new config.
+
+Why is this useful?
+
+Targeting parameters may change due to user interactions, for example when the user logs in, you now know a lot more about them than before. Your ads will yield more revenue with this additional information, which you want to pass as targeting parameters. Passing an updated configuration to the `AdvertisingProvider` allows you to refresh your ads slots with ads that are more specifically targeted.
 
 ## AdvertisingSlot
 
