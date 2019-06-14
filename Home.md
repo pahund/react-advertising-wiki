@@ -14,6 +14,7 @@ You can view a demo of this library online on *CodeSandbox*:
 
 * [[Usage]]
 * [[Internet Explorer 11 Compatibility]]
+* [[Advanced Usage]]
 * [[API]]
 * [[Configuration]]
 * [[Custom Events]]
