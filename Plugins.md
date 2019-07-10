@@ -61,6 +61,7 @@ function App() {
 * The plugin code is executed when the _AdvertisingProvider_ sets up Prebid; this is specified through the name of the
   method chosen for the plugin function
 * You can define multiple plugins, each plugin for one or more setup or initialization phases; valid names are:
+  * _setup_: initialization of _Advertising_ component
   * _setupGpt_: initialization of GPT when _AdvertisingProvider_ component mounts
   * _displaySlots_: immediately before `googletag.display` is called for each slot
   * _setupPrebid_: initialization of Prebid when _AdvertisingProvider_ component mounts
