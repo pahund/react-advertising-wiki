@@ -15,6 +15,8 @@
   * [Slot Targeting](#slot-targeting)
   * [Sizes](#sizes)
   * [Size Mapping Name](#size-mapping-name)
+* [Out of page slot GPT Configuration](#out-of-page-slot-gpt-configuration)
+  * [ID](#id)
 * [Slot Prebid Configuration](#slot-prebid-configuration)
   * [Prebid Media Types](#prebid-media-types)
   * [Bids](#bids)
@@ -50,6 +52,14 @@ const config = {
 
   // configuration of custom events dispatched by the creatives (object)
   customEvents,
+
+  // array of outOfPageSlot configurations
+  outOfPageSlots: [
+    {
+      // outOfPageSlot ID
+      id
+    }
+  ]
 
   // array of slot configurations
   slots: [
@@ -253,6 +263,37 @@ const config = {
 
 **See also**: [pbjs.setConfig](http://prebid.org/dev-docs/publisher-api-reference.html#module_pbjs.setConfig) (Prebid.js
 API reference)
+
+## Out of page slot GPT Configuration
+
+`config.outOfPageSlots`
+
+An array of slot config objects, which are explained in the following sub-sections.
+
+**Type**: Array of objects
+
+### ID
+
+`config.outOfPageSlots.id`
+
+The element ID of the div in your HTML code that is filled with the creative from the ad server. This ID corresponds to
+the _id_ prop of the [[AdvertisingSlot|API#advertisingslot]] component.
+
+**Required**
+
+**Type**: String
+
+**Example**:
+
+```javascript
+const config = {
+  outOfPageSlots: [
+    {
+      id: "div-gpt-ad-oop-0"
+    }
+  ]
+};
+```
 
 ## Slot GPT Configuration
 
