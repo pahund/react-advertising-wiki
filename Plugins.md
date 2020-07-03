@@ -5,7 +5,7 @@ It is an advanced feature that you probably won't need.
 
 A bit of background why this may be useful:
 
-At eBay, we use _react-prebid_ to render ads for our German online community [MOTOR-TALK](https://www.motor-talk.de/).
+At eBay, we use _react-advertising_ to render ads for our German online community [MOTOR-TALK](https://www.motor-talk.de/).
 
 For MOTOR-TALK, we render our React layout both on the client side and on the server side to make our website search
 engine friendly.
