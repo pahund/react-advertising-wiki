@@ -16,14 +16,14 @@ It handles all the interaction with the DFP ad server and is required for the ad
 | Name      | Type                                                                                                                                          | Required       | Default | Description                                                                          |
 | --------- | --------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------- | ------------------------------------------------------------------------------------ |
 | `active`  | Boolean                                                                                                                                       | –              | `true`  | If set to `false`, the advertising provider is deactivated and no ads will be served |
-| `config`  | [AdvertisingConfigPropType](https://github.com/technology-ebay-de/react-prebid/blob/master/src/components/utils/AdvertisingConfigPropType.js) | - | –       | Refer to section [[Configuration]] for details                                       |
+| `config`  | [AdvertisingConfigPropType](https://github.com/technology-ebay-de/react-advertising/blob/master/src/components/utils/AdvertisingConfigPropType.js) | - | –       | Refer to section [[Configuration]] for details                                       |
 | `plugins` | Array                                                                                                                                         | –              | –       | Refer to section [[Plugins]] for details                                             |
 
 ### Usage
 
 ```javascript
 import React from "react";
-import { AdvertisingProvider } from "react-prebid";
+import { AdvertisingProvider } from "react-advertising";
 
 export default ({ children }) => <AdvertisingProvider active={false}>{children}</AdvertisingProvider>;
 ```
@@ -69,7 +69,7 @@ Each _AdvertisingSlot_ component provides a div element which is filled with an 
 
 ```javascript
 import React from "react";
-import { AdvertisingSlot } from "react-prebid";
+import { AdvertisingSlot } from "react-advertising";
 
 export default () => <AdvertisingSlot id="my-id" />;
 ```
@@ -91,14 +91,14 @@ The `activate` prop is created and passed to your component when you wrap it usi
 ### Usage
 
 Refer to the source code of the
-[AdvertisingSlot](https://github.com/technology-ebay-de/react-prebid/blob/master/src/components/AdvertisingSlot.js)
+[AdvertisingSlot](https://github.com/technology-ebay-de/react-advertising/blob/master/src/components/AdvertisingSlot.js)
 component for a reference implementation.
 
 Here is a minimal example:
 
 ```javascript
 import React, { Component } from 'react';
-import { connectToAdServer } from 'react-prebid';
+import { connectToAdServer } from 'react-advertising';
 
 class MyAdSlot extends Component {
     componentDidMount() {
