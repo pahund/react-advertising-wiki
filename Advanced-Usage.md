@@ -5,9 +5,9 @@
 
 ## Passing Configuration Asynchronously
 
-🎁 **since version [1.1.0](https://github.com/technology-ebay-de/react-prebid/releases/tag/1.1.0)**
+🎁 **since version [1.1.0](https://github.com/technology-ebay-de/react-advertising/releases/tag/1.1.0)**
 
-Instead of rendering your <a href="https://github.com/technology-ebay-de/react-prebid/wiki/API#advertisingprovider">AdvertisingProvider</a> component with a configuration prop, you can choose to omit the config prop.
+Instead of rendering your <a href="https://github.com/technology-ebay-de/react-advertising/wiki/API#advertisingprovider">AdvertisingProvider</a> component with a configuration prop, you can choose to omit the config prop.
 
 **Why is this useful?**
 
@@ -17,9 +17,9 @@ The solution is to render the `AdvertisingProvider` without a config on initial 
 
 ## Updating the Configuration After Initial Rendering
 
-🎁 **since version [2.0.0](https://github.com/technology-ebay-de/react-prebid/releases/tag/2.0.0)**
+🎁 **since version [2.0.0](https://github.com/technology-ebay-de/react-advertising/releases/tag/2.0.0)**
 
-You can update your <a href="https://github.com/technology-ebay-de/react-prebid/wiki/API#advertisingprovider">AdvertisingProvider</a> by re-rendering it with a different configuration prop than before.
+You can update your <a href="https://github.com/technology-ebay-de/react-advertising/wiki/API#advertisingprovider">AdvertisingProvider</a> by re-rendering it with a different configuration prop than before.
 
 When the `AdvertisingProvider` receives a new `config` prop, it will automatically tear down GPT and Prebid and set them up again with the updated configuration, causing all the ad slots in the container to get refreshed with new ads according to the new config.
 
