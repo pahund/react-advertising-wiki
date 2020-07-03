@@ -8,7 +8,7 @@ This can be done by dispatching a message from the iframe delivered by the ad se
 browser's [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) API, as
 [described in this blog post](https://davidwalsh.name/window-iframe).
 
-_React-prebid_ allows use to set up these custom events in your [[config|Configuration#custom-events]] and then pass a
+_React-advertising_ allows use to set up these custom events in your [[config|Configuration#custom-events]] and then pass a
 callback function to the [[AdvertisingSlot|API#advertisingslot]] component as _customEventHandlers_ prop.
 
 Let's configure a custom event for changing the background color, for example, by adding this to the ad config:
