@@ -1,4 +1,4 @@
-*react-prebid* is a library for ad placements with [Prebid](http://prebid.org) header bidding in [React](https://reactjs.org) applications.
+*react-advertising* is a library for display ads in [React](https://reactjs.org) applications.
 
 To use it, you need to have a [Doubleclick for Publishers](https://www.google.com/intl/en/doubleclick/publishers/welcome/)
 (DFP) ad server set up, along with configuration to use Prebid in place. Please refer to the
