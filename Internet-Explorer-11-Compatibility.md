@@ -1,6 +1,6 @@
-By default, the *react-prebid* bundle does not include any polyfills to enable compatibility with older browsers. This is done intentionally to keep the bundle size small.
+By default, the *react-advertising* bundle does not include any polyfills to enable compatibility with older browsers. This is done intentionally to keep the bundle size small.
 
-The downside of this is that *react-prebid* is by default **not** compatible with Microsoft Internet Explorer 11, since IE11 is not in active development anymore, hasn't been for quite some time, hence does not support many of the features of modern browsers.
+The downside of this is that *react-advertising* is by default **not** compatible with Microsoft Internet Explorer 11, since IE11 is not in active development anymore, hasn't been for quite some time, hence does not support many of the features of modern browsers.
 
 To remedy this, you can use [babel-polyfill](https://babeljs.io/docs/en/babel-polyfill) to emulate modern browser features on older browsers. There's a good chance your web app is already using this, it's quite common.
 
