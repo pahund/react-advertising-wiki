@@ -1,1 +1,1 @@
-Copyright © 2019 mobile.de GmbH
+Copyright © 2020 mobile.de GmbH
