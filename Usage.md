@@ -14,10 +14,10 @@ You can find the complete code of this tutorial online on [CodeSandbox](https://
 
 ## Installing the Package
 
-Assuming you already have an application that uses React, install the _react-prebid_ package as a production dependency
+Assuming you already have an application that uses React, install the _react-advertising_ package as a production dependency
 with npm:
 
-    npm install --save react-prebid
+    npm install --save react-advertising
 
 **Note:** Your React version should be at least version 16.3. Older versions of React are not supported.
 
@@ -66,7 +66,7 @@ Example:
 
 ```jsx
 import React from 'react';
-import { AdvertisingProvider } from 'react-prebid';
+import { AdvertisingProvider } from 'react-advertising';
 
 const config = {
     slots: [
@@ -129,7 +129,7 @@ The final code example:
 
 ```jsx
 import React from 'react';
-import { AdvertisingProvider, AdvertisingSlot } from 'react-prebid';
+import { AdvertisingProvider, AdvertisingSlot } from 'react-advertising';
 
 const config = {
     slots: [
