@@ -25,7 +25,7 @@
 
 ## Demo
 
-You can check if your configuration is valid online in our [react-prebid config validator](https://7ml075xoz1.codesandbox.io):
+You can check if your configuration is valid online in our [react-advertising config validator](https://7ml075xoz1.codesandbox.io):
 
 [![Screenshot of config validator on CodeSandbox.io](images/React-Prebid-Config-Validator-Screenshot.png "Screenshot of config validator")](https://7ml075xoz1.codesandbox.io)
 
@@ -106,8 +106,8 @@ const config = {
 ```
 
 Hint: For an example of a complete, valid configuration, refer to
-[testAdvertisingConfig.js](https://github.com/technology-ebay-de/react-prebid/blob/master/src/utils/testAdvertisingConfig.js)
-in the source code, which is used for the unit tests of _react-prebid_.
+[testAdvertisingConfig.js](https://github.com/technology-ebay-de/react-advertising/blob/master/src/utils/testAdvertisingConfig.js)
+in the source code, which is used for the unit tests of _react-advertising_.
 
 ## Global GPT Configuration
 
