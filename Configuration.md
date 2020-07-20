@@ -27,7 +27,7 @@
 
 You can check if your configuration is valid online in our [react-advertising config validator](https://7ml075xoz1.codesandbox.io):
 
-[![Screenshot of config validator on CodeSandbox.io](images/React-Prebid-Config-Validator-Screenshot.png "Screenshot of config validator")](https://7ml075xoz1.codesandbox.io)
+[![Screenshot of config validator on CodeSandbox.io](images/React-Advertising-Config-Validator-Screenshot.png "Screenshot of config validator")](https://7ml075xoz1.codesandbox.io)
 
 ## Overview
 
