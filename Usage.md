@@ -8,7 +8,7 @@
 
 ## Demo
 
-You can find the complete code of this tutorial online on [CodeSandbox](https://codesandbox.io/s/k5w8mr9o23).
+You can find the complete code of this tutorial online on [CodeSandbox](https://codesandbox.io/s/react-advertising-demo-p5xdm).
 
 [![Screenshot of demo on CodeSandbox.io](images/React-Prebid-CodeSandbox-Demo-Screenshot.png "Screenshot of demo on CodeSandbox")](https://codesandbox.io/s/k5w8mr9o23)
 
