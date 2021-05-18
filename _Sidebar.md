@@ -1,5 +1,6 @@
 * [[Home]]
 * [[Usage]]
+* [[Usage with Prebid]]
 * [[Internet Explorer 11 Compatibility]]
 * [[Advanced Usage]]
 * [[API]]
